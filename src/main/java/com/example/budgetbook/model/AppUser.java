@@ -14,4 +14,24 @@ public class AppUser {
 
     @NotNull
     private String passwordHash;
+
+    protected AppUser() {
+    }
+
+    public AppUser(String email, String passwordHash) {
+        this.email = email;
+        this.passwordHash = passwordHash;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPasswordHash() {
+        return passwordHash;
+    }
 }
